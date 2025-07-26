@@ -63,7 +63,7 @@ spec:
           value: {{ .Values.vipAddress }}
         - name: prometheus_server
           value: :2112
-        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        image: {{ .Values.image.repository }}: {{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: kube-vip
         resources: {}

@@ -14,7 +14,7 @@ This Helm chart deploys [kube-vip](https://kube-vip.io/) for Kubernetes control 
 3. Install the chart:
 
    ```sh
-   helm install kube-vip ./kube-vip-chart --namespace kube-system
+   helm install kube-vip ./kube-vip-helm-chart --namespace kube-system
    ```
 
 ## Configuration
@@ -28,9 +28,9 @@ Edit `values.yaml` to set:
 
 ## Files
 
-- `kube-vip-chart/Chart.yaml`: Helm chart metadata
-- `kube-vip-chart/values.yaml`: Default values
-- `kube-vip-chart/templates/`: Kubernetes manifests (ConfigMap, DaemonSet, cloud controller)
+- `kube-vip-helm-chart/Chart.yaml`: Helm chart metadata
+- `kube-vip-helm-chart/values.yaml`: Default values
+- `kube-vip-helm-chart/templates/`: Kubernetes manifests (ConfigMap, DaemonSet, cloud controller)
 
 ## Uninstall
 

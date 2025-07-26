@@ -61,7 +61,7 @@ spec:
       - command:
         - /kube-vip-cloud-provider
         - --leader-elect-resource-name=kube-vip-cloud-controller
-        image: {{ .Values.cloudController.image.repository }}:{{ .Values.cloudController.image.tag }}
+        image: {{ .Values.cloudController.image.repository }}: {{ .Values.cloudController.image.tag }}
         name: kube-vip-cloud-provider
         imagePullPolicy: {{ .Values.cloudController.image.pullPolicy }}
       dnsPolicy: ClusterFirst
