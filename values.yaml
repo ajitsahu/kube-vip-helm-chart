@@ -1,0 +1,17 @@
+image:
+  repository: ghcr.io/kube-vip/kube-vip
+  tag: v0.9.2
+  pullPolicy: IfNotPresent
+
+cloudController:
+  image:
+    repository: ghcr.io/kube-vip/kube-vip-cloud-provider
+    tag: v0.0.12
+    pullPolicy: Always
+
+vipInterface: enp0s1
+vipAddress: 192.168.64.64
+vipSubnet: "32"
+port: "6443"
+namespace: kube-system
+cidrGlobal: 172.20.10.0/24

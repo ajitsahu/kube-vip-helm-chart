@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kubevip
+  namespace: {{ .Values.namespace }}
+data:
+  cidr-global: {{ .Values.cidrGlobal }}
